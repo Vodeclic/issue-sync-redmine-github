@@ -19,7 +19,9 @@ class Mapping
       1 => "gmontard",
       5 => "petrachi",
       20 => "jennyfer",
-      19 => "Oliv75"
+      19 => "Oliv75",
+      45 => "djtal",
+      46 => "freiden"
     }
   end
 
