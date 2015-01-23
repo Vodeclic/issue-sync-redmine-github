@@ -4,7 +4,7 @@ class Issue < ActiveRecord::Base
 
   def update_on_redmine(github)
     options = redmine_options(github)
-    HTTParty.put("#{ENV['REDMINE_URL']}/issues/#{self.redmine_id}.json?key=#{ENV['REDMINE_API_KEY']}", options)
+    HTTParty.put("#{ENV['REDMINE_URL']}/issues/#{redmine_id}.json?key=#{ENV['REDMINE_API_KEY']}", options)
   end
 
   def create_on_github(redmine)
@@ -51,6 +51,12 @@ class Issue < ActiveRecord::Base
         issue: {
           status_id: @@mapping.status.key(github.status),
           assigned_to_id: @@mapping.assignee.key(github.assignee),
+          custom_fields: [
+            {
+              id: 3,
+              value: github_id
+            }
+          ]
         }
       }
     }
