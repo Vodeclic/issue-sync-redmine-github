@@ -21,7 +21,8 @@ class Mapping
       20 => "jennyfer",
       45 => "djtal",
       46 => "freiden",
-      51 => "tanguyantoine"
+      51 => "tanguyantoine",
+      57 => "almerino"
     }
   end
 
