@@ -23,7 +23,8 @@ class Mapping
       46 => "freiden",
       51 => "tanguyantoine",
       57 => "almerino",
-      59 => "dindonus"
+      59 => "dindonus",
+      61 => "stephenoreilly"
     }
   end
 
