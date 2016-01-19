@@ -23,8 +23,9 @@ class Mapping
       46 => "freiden",
       51 => "tanguyantoine",
       57 => "almerino",
-      59 => "dindonus",
-      61 => "stephenoreilly"
+      61 => "stephenoreilly",
+      63 => "yasseur-vodeclic",
+      64 => "numidiasoft"
     }
   end
 
