@@ -16,12 +16,10 @@ class Mapping
 
   def assignee
     {
-      1 => "gmontard",
-      5 => "petrachi",
+      1 => "vodetech",
       20 => "jennyfer",
       45 => "djtal",
       46 => "freiden",
-      51 => "tanguyantoine",
       57 => "almerino",
       61 => "stephenoreilly",
       63 => "yasseur-vodeclic",
