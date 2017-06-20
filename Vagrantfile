@@ -6,7 +6,7 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   ##### Custom Settings ####
-  private_ip = ENV['VAGRANT_PRIVATE_IP'] || "10.0.0.102"
+  private_ip = ENV['VAGRANT_PRIVATE_IP4'] || "10.0.0.104"
   cpu = ENV['VAGRANT_CPU'] || 4
   ram = ENV['VAGRANT_MEMORY'] || 4096
 

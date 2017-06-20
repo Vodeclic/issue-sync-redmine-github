@@ -18,6 +18,7 @@
       - 'ruby-2.1.2'
     rvm1_install_flags: '--auto-dotfiles --user-install'
     rvm1_install_path: '/home/{{ ansible_ssh_user }}/.rvm'
+    rvm1_user: '{{ ansible_ssh_user }}'
 
 
   pre_tasks:
@@ -42,7 +43,7 @@
         - wget
 
   roles:
-    - { role: rvm_io.rvm1-ruby, tags: ruby, sudo: false }
+    - { role: rvm_io.ruby, tags: ruby, sudo: false }
     - postgresql
 
   tasks:
@@ -68,5 +69,12 @@
       with_items:
         - postgresql-server-dev-9.3
 
+    - name: Get Heroku Toolbelt
+      get_url:
+        group: vagrant
+        owner: vagrant
+        url: https://toolbelt.heroku.com/install-ubuntu.sh
+        dest: /tmp/install-ubuntu.sh
+
     - name: Install Heroku Toolbelt
-      shell: wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+      shell: sh /tmp/install-ubuntu.sh
