@@ -23,7 +23,9 @@ class Mapping
       57 => "almerino",
       61 => "stephenoreilly",
       63 => "yasseur-vodeclic",
-      64 => "numidiasoft"
+      64 => "numidiasoft",
+      33 => "vodeclicjeremy",
+      71 => "stafahi"
     }
   end
 
